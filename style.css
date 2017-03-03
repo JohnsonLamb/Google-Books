@@ -1,0 +1,31 @@
+body{
+	font-size: 200%;
+}
+#searchResultsText{
+	margin: 1em 0 1em 0;
+	display:block
+}
+#searchResults{
+	margin-top: 1em;
+}
+
+.bookPublish{
+	border-bottom: thin solid black;
+	margin-bottom: 1em;
+}
+.bookTitleText, .bookAuthorText{
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+.bookAuthorText{
+	margin-top: 0.5em;
+}
+.bookAuthor{
+	margin-bottom: 0.5em;
+}
+.bookPublishText,.bookPublish{
+	font-size: 0.8em;
+}
+#previous{
+	margin-right: 1em;
+}
