@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	
 	//Variables
 	var _searchText; //variable to store the text the user inserted in the text box
-	var _apiKey = ""; //variable containing the last parameter of the GET request and the API key
+	var _apiKey = ':keyes&key=' + config.MY_KEY; //variable containing the last parameter of the GET request and the API key
 	var _apiURL = "https://www.googleapis.com/books/v1/volumes?q="; //variable containing the URL for the GET request
 	var _searchType=""; //variable to define the type of search: author name or title
 	var _maxResults = 10; //variable to control the amount of results per page
