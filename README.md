@@ -17,3 +17,11 @@ Some notes at the time of completion
 I don't see how to quickly organize all the data since it's fetched in blocks.
 - To make new searches after changing the search parameters (author, title, publish date and relevance) it is necessary to press the search button again.
 - I have included a small image to explain the interface (intructions.png) 
+
+--08-03-2017--
+
+Hid the API key from the public. In order to get the website to work follow these steps:
+- Get your own google books API: https://support.google.com/cloud/answer/6158862.
+- Don't forget to activate your API key.
+- Go to the config.js file and replace the 'Nothing to see here' with your own API key.
+- Now the application is working.
