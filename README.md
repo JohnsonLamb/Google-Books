@@ -23,5 +23,5 @@ I don't see how to quickly organize all the data since it's fetched in blocks.
 Hid the API key from the public. In order to get the website to work follow these steps:
 - Get your own google books API: https://support.google.com/cloud/answer/6158862.
 - Don't forget to activate your API key.
-- Go to the config.js file and replace the 'Nothing to see here' with your own API key.
+- Go to the config.js file and replace the 'Nothing to see here' with your own API key. (insert the key inside brackets ' ')
 - Now the application is working.
