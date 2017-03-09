@@ -8,9 +8,8 @@ $( document ).ready(function() {
 	var _searchType=""; //variable to define the type of search: author name or title
 	var _maxResults = 10; //variable to control the amount of results per page
 	var _startIndex = 0; //variable to control the position in the collection of volumes
-	var _previousIndex = 0;
-	var _totalResults = 0;
-	var _orderType ="";
+	var _totalResults = 0; //variable that holds the total number of results fetched with the GET request
+	var _orderType =""; //Variable that controls the results order - Relevance or Publish Date
 	
 	
 //function that handles the event after clicking "Search" or pressing ENTER key
@@ -69,7 +68,6 @@ function requestBooks(_searchText,_startIndex,_maxResults,_searchType,_orderType
 		//readystate = 4 means Data is ready to be proccessed
 		if (_xhr.readyState == 4 && _xhr.status == 200) {
 			var _response = JSON.parse(_xhr.responseText); //transform the response text into a JSON object
-			console.log(_response);
 			displayTotalResults(_response);
 			displayResults(_response);
 			createPagination(_response);
@@ -80,7 +78,6 @@ function requestBooks(_searchText,_startIndex,_maxResults,_searchType,_orderType
 
 //function to create pagination
 function createPagination(_response){
-	
 	cleanPagination();
 	_totalResults = _response.totalItems;
 	//if _startIndex = 0 it means it's the first batch of book data
